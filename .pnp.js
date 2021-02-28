@@ -40,6 +40,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@aws-amplify/auth", "npm:3.4.24"],
             ["@aws-amplify/cache", "npm:3.1.49"],
             ["@aws-amplify/core", "npm:3.8.16"],
+            ["@aws-amplify/interactions", "npm:3.3.24"],
+            ["@aws-amplify/storage", "npm:3.3.24"],
+            ["@aws-amplify/ui-react", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:1.0.3"],
             ["@aws-sdk/fetch-http-handler", "npm:3.6.1"],
             ["@aws-sdk/protocol-http", "npm:3.6.1"],
             ["@aws-sdk/querystring-builder", "npm:3.6.1"],
@@ -269,6 +272,57 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@aws-amplify-ui-npm-2.0.2-a71458b864-87aff40aac.zip/node_modules/@aws-amplify/ui/",
           "packageDependencies": [
             ["@aws-amplify/ui", "npm:2.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@aws-amplify/ui-components", [
+        ["npm:1.0.3", {
+          "packageLocation": "./.yarn/cache/@aws-amplify-ui-components-npm-1.0.3-6898a9bdb5-187c271799.zip/node_modules/@aws-amplify/ui-components/",
+          "packageDependencies": [
+            ["@aws-amplify/ui-components", "npm:1.0.3"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:28efb8514b7d2c3b2714c528bef91de61e389d16b220d20be48c5525cc11b8612bdc491e7d03bf71d980afce6250a0a68fd2a2a56846e4ec1b95776e9b77f917#npm:1.0.3", {
+          "packageLocation": "./.yarn/$$virtual/@aws-amplify-ui-components-virtual-160e793fdc/0/cache/@aws-amplify-ui-components-npm-1.0.3-6898a9bdb5-187c271799.zip/node_modules/@aws-amplify/ui-components/",
+          "packageDependencies": [
+            ["@aws-amplify/ui-components", "virtual:28efb8514b7d2c3b2714c528bef91de61e389d16b220d20be48c5525cc11b8612bdc491e7d03bf71d980afce6250a0a68fd2a2a56846e4ec1b95776e9b77f917#npm:1.0.3"],
+            ["@types/aws-amplify", null],
+            ["aws-amplify", null],
+            ["qrcode", "npm:1.4.4"],
+            ["uuid", "npm:8.3.2"]
+          ],
+          "packagePeers": [
+            "@types/aws-amplify",
+            "aws-amplify"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@aws-amplify/ui-react", [
+        ["npm:1.0.3", {
+          "packageLocation": "./.yarn/cache/@aws-amplify-ui-react-npm-1.0.3-924dd9f9ed-55b583ddac.zip/node_modules/@aws-amplify/ui-react/",
+          "packageDependencies": [
+            ["@aws-amplify/ui-react", "npm:1.0.3"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:1.0.3", {
+          "packageLocation": "./.yarn/$$virtual/@aws-amplify-ui-react-virtual-28efb8514b/0/cache/@aws-amplify-ui-react-npm-1.0.3-924dd9f9ed-55b583ddac.zip/node_modules/@aws-amplify/ui-react/",
+          "packageDependencies": [
+            ["@aws-amplify/ui-react", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:1.0.3"],
+            ["@aws-amplify/ui-components", "virtual:28efb8514b7d2c3b2714c528bef91de61e389d16b220d20be48c5525cc11b8612bdc491e7d03bf71d980afce6250a0a68fd2a2a56846e4ec1b95776e9b77f917#npm:1.0.3"],
+            ["@types/react", "npm:17.0.2"],
+            ["@types/react-dom", "npm:17.0.1"],
+            ["react", "npm:17.0.1"],
+            ["react-dom", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:17.0.1"]
+          ],
+          "packagePeers": [
+            "@types/react-dom",
+            "@types/react",
+            "react-dom",
+            "react"
           ],
           "linkType": "HARD",
         }]
@@ -9014,6 +9068,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@aws-amplify/auth", "npm:3.4.24"],
             ["@aws-amplify/cache", "npm:3.1.49"],
             ["@aws-amplify/core", "npm:3.8.16"],
+            ["@aws-amplify/interactions", "npm:3.3.24"],
+            ["@aws-amplify/storage", "npm:3.3.24"],
+            ["@aws-amplify/ui-react", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:1.0.3"],
             ["@aws-sdk/fetch-http-handler", "npm:3.6.1"],
             ["@aws-sdk/protocol-http", "npm:3.6.1"],
             ["@aws-sdk/querystring-builder", "npm:3.6.1"],
@@ -9346,6 +9403,35 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["buffer", "npm:5.7.1"],
             ["base64-js", "npm:1.5.1"],
             ["ieee754", "npm:1.2.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["buffer-alloc", [
+        ["npm:1.2.0", {
+          "packageLocation": "./.yarn/cache/buffer-alloc-npm-1.2.0-388beee0c7-0a66de8968.zip/node_modules/buffer-alloc/",
+          "packageDependencies": [
+            ["buffer-alloc", "npm:1.2.0"],
+            ["buffer-alloc-unsafe", "npm:1.1.0"],
+            ["buffer-fill", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["buffer-alloc-unsafe", [
+        ["npm:1.1.0", {
+          "packageLocation": "./.yarn/cache/buffer-alloc-unsafe-npm-1.1.0-b5d7ccb44c-f5ab30acb1.zip/node_modules/buffer-alloc-unsafe/",
+          "packageDependencies": [
+            ["buffer-alloc-unsafe", "npm:1.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["buffer-fill", [
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/buffer-fill-npm-1.0.0-915809118a-099a16038e.zip/node_modules/buffer-fill/",
+          "packageDependencies": [
+            ["buffer-fill", "npm:1.0.0"]
           ],
           "linkType": "HARD",
         }]
@@ -11144,6 +11230,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["bn.js", "npm:4.11.9"],
             ["miller-rabin", "npm:4.0.1"],
             ["randombytes", "npm:2.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["dijkstrajs", [
+        ["npm:1.0.1", {
+          "packageLocation": "./.yarn/cache/dijkstrajs-npm-1.0.1-81b7e89a62-d19594fc0a.zip/node_modules/dijkstrajs/",
+          "packageDependencies": [
+            ["dijkstrajs", "npm:1.0.1"]
           ],
           "linkType": "HARD",
         }]
@@ -14773,6 +14868,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["isarray", "npm:1.0.0"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:2.0.5", {
+          "packageLocation": "./.yarn/cache/isarray-npm-2.0.5-4ba522212d-cfb3e907b3.zip/node_modules/isarray/",
+          "packageDependencies": [
+            ["isarray", "npm:2.0.5"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["isexe", [
@@ -17884,6 +17986,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["pngjs", [
+        ["npm:3.4.0", {
+          "packageLocation": "./.yarn/cache/pngjs-npm-3.4.0-4e495c1dad-aa6d2cb4dd.zip/node_modules/pngjs/",
+          "packageDependencies": [
+            ["pngjs", "npm:3.4.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["pnp-webpack-plugin", [
         ["npm:1.6.4", {
           "packageLocation": "./.yarn/cache/pnp-webpack-plugin-npm-1.6.4-c497046afc-39a484182f.zip/node_modules/pnp-webpack-plugin/",
@@ -19110,6 +19221,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/q-npm-1.5.1-a28b3cfeaf-f610c1295a.zip/node_modules/q/",
           "packageDependencies": [
             ["q", "npm:1.5.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["qrcode", [
+        ["npm:1.4.4", {
+          "packageLocation": "./.yarn/cache/qrcode-npm-1.4.4-f137b3816b-125b751363.zip/node_modules/qrcode/",
+          "packageDependencies": [
+            ["qrcode", "npm:1.4.4"],
+            ["buffer", "npm:5.7.1"],
+            ["buffer-alloc", "npm:1.2.0"],
+            ["buffer-from", "npm:1.1.1"],
+            ["dijkstrajs", "npm:1.0.1"],
+            ["isarray", "npm:2.0.5"],
+            ["pngjs", "npm:3.4.0"],
+            ["yargs", "npm:13.3.2"]
           ],
           "linkType": "HARD",
         }]

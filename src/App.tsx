@@ -1,4 +1,5 @@
 import React from 'react';
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { ThemeProvider } from '@material-ui/core';
 import './App.css';
@@ -27,4 +28,4 @@ function App() {
   );
 }
 
-export default App;
+export default withAuthenticator(App);
