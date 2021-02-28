@@ -37,6 +37,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["@aws-amplify/auth", "npm:3.4.24"],
+            ["@aws-amplify/cache", "npm:3.1.49"],
+            ["@aws-amplify/core", "npm:3.8.16"],
+            ["@aws-sdk/fetch-http-handler", "npm:3.6.1"],
+            ["@aws-sdk/protocol-http", "npm:3.6.1"],
+            ["@aws-sdk/querystring-builder", "npm:3.6.1"],
             ["@material-ui/core", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:4.11.3"],
             ["@material-ui/icons", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:4.11.2"],
             ["@testing-library/dom", "npm:7.29.6"],
@@ -53,6 +59,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@yarnpkg/pnpify", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:2.4.0"],
             ["aws-amplify", "npm:3.3.21"],
             ["babel-eslint", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:10.1.0"],
+            ["crypto-js", "npm:4.0.0"],
             ["eslint", "npm:7.21.0"],
             ["eslint-config-react-app", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:6.0.0"],
             ["eslint-plugin-flowtype", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:5.3.1"],
@@ -9004,6 +9011,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["binder", "workspace:."],
+            ["@aws-amplify/auth", "npm:3.4.24"],
+            ["@aws-amplify/cache", "npm:3.1.49"],
+            ["@aws-amplify/core", "npm:3.8.16"],
+            ["@aws-sdk/fetch-http-handler", "npm:3.6.1"],
+            ["@aws-sdk/protocol-http", "npm:3.6.1"],
+            ["@aws-sdk/querystring-builder", "npm:3.6.1"],
             ["@material-ui/core", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:4.11.3"],
             ["@material-ui/icons", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:4.11.2"],
             ["@testing-library/dom", "npm:7.29.6"],
@@ -9020,6 +9033,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@yarnpkg/pnpify", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:2.4.0"],
             ["aws-amplify", "npm:3.3.21"],
             ["babel-eslint", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:10.1.0"],
+            ["crypto-js", "npm:4.0.0"],
             ["eslint", "npm:7.21.0"],
             ["eslint-config-react-app", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:6.0.0"],
             ["eslint-plugin-flowtype", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:5.3.1"],
@@ -10382,6 +10396,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/crypto-js-npm-3.3.0-5b307000b5-7cf8de489f.zip/node_modules/crypto-js/",
           "packageDependencies": [
             ["crypto-js", "npm:3.3.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:4.0.0", {
+          "packageLocation": "./.yarn/cache/crypto-js-npm-4.0.0-cc8d8715a9-fdd1415b9e.zip/node_modules/crypto-js/",
+          "packageDependencies": [
+            ["crypto-js", "npm:4.0.0"]
           ],
           "linkType": "HARD",
         }]

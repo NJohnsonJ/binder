@@ -67,7 +67,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-amplify/auth@npm:3.4.24":
+"@aws-amplify/auth@npm:3.4.24, @aws-amplify/auth@npm:^3.4.24":
   version: 3.4.24
   resolution: "@aws-amplify/auth@npm:3.4.24"
   dependencies:
@@ -79,7 +79,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-amplify/cache@npm:3.1.49":
+"@aws-amplify/cache@npm:3.1.49, @aws-amplify/cache@npm:^3.1.49":
   version: 3.1.49
   resolution: "@aws-amplify/cache@npm:3.1.49"
   dependencies:
@@ -88,7 +88,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-amplify/core@npm:3.8.16":
+"@aws-amplify/core@npm:3.8.16, @aws-amplify/core@npm:^3.8.16":
   version: 3.8.16
   resolution: "@aws-amplify/core@npm:3.8.16"
   dependencies:
@@ -921,7 +921,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-sdk/fetch-http-handler@npm:3.6.1":
+"@aws-sdk/fetch-http-handler@npm:3.6.1, @aws-sdk/fetch-http-handler@npm:^3.6.1":
   version: 3.6.1
   resolution: "@aws-sdk/fetch-http-handler@npm:3.6.1"
   dependencies:
@@ -1199,7 +1199,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-sdk/protocol-http@npm:3.6.1":
+"@aws-sdk/protocol-http@npm:3.6.1, @aws-sdk/protocol-http@npm:^3.6.1":
   version: 3.6.1
   resolution: "@aws-sdk/protocol-http@npm:3.6.1"
   dependencies:
@@ -1209,7 +1209,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-sdk/querystring-builder@npm:3.6.1":
+"@aws-sdk/querystring-builder@npm:3.6.1, @aws-sdk/querystring-builder@npm:^3.6.1":
   version: 3.6.1
   resolution: "@aws-sdk/querystring-builder@npm:3.6.1"
   dependencies:
@@ -5695,6 +5695,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "binder@workspace:."
   dependencies:
+    "@aws-amplify/auth": ^3.4.24
+    "@aws-amplify/cache": ^3.1.49
+    "@aws-amplify/core": ^3.8.16
+    "@aws-sdk/fetch-http-handler": ^3.6.1
+    "@aws-sdk/protocol-http": ^3.6.1
+    "@aws-sdk/querystring-builder": ^3.6.1
     "@material-ui/core": ^4.11.3
     "@material-ui/icons": ^4.11.2
     "@testing-library/dom": ^7.29.6
@@ -5711,6 +5717,7 @@ __metadata:
     "@yarnpkg/pnpify": ^2.4.0
     aws-amplify: ^3.3.21
     babel-eslint: ^10.1.0
+    crypto-js: ^4.0.0
     eslint: ^7.21.0
     eslint-config-react-app: ^6.0.0
     eslint-plugin-flowtype: ^5.3.1
@@ -6940,6 +6947,13 @@ __metadata:
   version: 3.3.0
   resolution: "crypto-js@npm:3.3.0"
   checksum: 7cf8de489f9f25084a3b22cc6e944e2e11e03b6374777a7a554739ee27e3b35d5dfdac490e0a66bc191c9ecbbea13ad716f59345657335b39d95f9bc19c40ac5
+  languageName: node
+  linkType: hard
+
+"crypto-js@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "crypto-js@npm:4.0.0"
+  checksum: fdd1415b9e4b317f6ac7f055a00495dabea6aa93ab82ccd63866b0a76d2da9587942764816a8a7976cb23b8bbfd7eea23ccb852b3fef218d166cc5db8c008ab3
   languageName: node
   linkType: hard
 
