@@ -24,7 +24,7 @@
           "EMAILSUBJECT": "",
           "EMAILMESSAGE": "",
           "deploymentBucketName": "amplify-binder-dev-170033-deployment",
-          "s3Key": "amplify-builds/binderd740bc6ed740bc6eCustomMessage-64546e462f4f75497649-build.zip"
+          "s3Key": "amplify-builds/binderd740bc6ed740bc6eCustomMessage-38376b32544d39762b62-build.zip"
         }
       },
       "auth": {
