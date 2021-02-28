@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { IconButton, Menu, MenuItem } from '@material-ui/core';
 import { Menu as MenuIcon } from '@material-ui/icons';
 import { Link } from 'react-router-dom';
-import { routes } from '../routes/routes';
+import routes from '../routes';
 
 const NavMenu = () => {
 

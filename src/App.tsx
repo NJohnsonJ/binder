@@ -1,9 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { ThemeProvider } from '@material-ui/core';
-import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 import './App.css';
-import { routes } from './routes/routes';
+import routes from './routes';
 import Header from "./components/Header";
 import theme from './style/theme';
 
@@ -23,10 +22,9 @@ function App() {
 
           </Switch>
         </Router>
-        <AmplifySignOut />
       </ThemeProvider>
     </React.StrictMode>
   );
 }
 
-export default withAuthenticator(App);
+export default App;
