@@ -1,0 +1,18 @@
+{
+  "trigger": true,
+  "modules": [
+    "captcha-verify"
+  ],
+  "parentResource": "binderd740bc6ed740bc6e",
+  "functionName": "binderd740bc6ed740bc6eVerifyAuthChallengeResponse",
+  "resourceName": "binderd740bc6ed740bc6eVerifyAuthChallengeResponse",
+  "parentStack": "auth",
+  "triggerEnvs": [],
+  "triggerDir": "C:\\Users\\dontc\\AppData\\Roaming\\npm\\node_modules\\@aws-amplify\\cli\\node_modules\\amplify-category-auth\\provider-utils\\awscloudformation\\triggers\\VerifyAuthChallengeResponse",
+  "triggerTemplate": "VerifyAuthChallengeResponse.json.ejs",
+  "triggerEventPath": "VerifyAuthChallengeResponse.event.json",
+  "roleName": "binderd740bc6ed740bc6eVerifyAuthChallengeResponse",
+  "skipEdit": true,
+  "RECAPTCHASECRET": "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDaEHe4uFXvt+hE\\nUBnHZW5vUzLNdySAmobTtMzMRLMeIkiFog5iOCHJ/T2S+lgN/A+2FBV9qV54q71h\\nH7kDhBx6DvpjKVtBFi1IqSmx7fvLN/VfrhxLAhsdOm9+yTtZNC5mbjSF3lTiIGRX\\nKHH8s2ZBaz+cTKtrOQOlQPmyNz4izmdhfJChDKZ040zpl67SOCvCpkJCJnpta+Yx\\nmEChOpyS9CqOsFScJAHtS4vxWO6ycFgo6k4U8cA7GXXmrQyVkHMRg4d1tf1E/6QM\\nFeu8LbooKV4ItjMhvIUbwZjuH9mA4MmHgj1ZNvBMm6vQon4iPKL+JgzmC7jPkH+l\\nmCLR2sg7AgMBAAECggEASZZtEGUEexTwyLzPNj7Aecj1x+iA5PVAsoi84+H7IBwp\\npQ7/E54lqOhQsxzQQkfhdWxppDJXsxkhm3j9EnautXIAhR4bsWcueOq9K1JIOlfz\\n8gnrelSHmeFyZrK52GyHjAF8sABLXNPZiKAZd1GDHGh42uH0pwZieI3otX929H9b\\nSuog2B72klIa+kydfYH76TyljBRYGA8gmHohv1Q2pmBf1mGVVEw14Y4sC5Enwv+a\\nyxKw/cNzgvMtBgnHvjzoiidnryBhGfJ1qCb8XCyGkp2VpmibwezvsYbURL6ycTII\\nrVBX2lJqw5HRPhvA+OyYGBNjouFjEx9u5xXxB/9NwQKBgQD0xQlSocQ+eqQTnbHY\\nHSs2AeCI6Yqdau0We4LTRdFLxlwQB9lKxfyhHCnuSZfmzwGRBjfCe26h1bgvJSJZ\\nPICIEeSN9GIB75M0gtQzLCP4CinNU+zqp4qc+fwcY1J4BGE5Sbn1vSKvPjOhm4+p\\ndEjWgW1z+E3msSsjLciAH/KMkwKBgQDkEcLiG/3sJybC/e5cTup+0F6UKGMkZtbe\\ncI3I7JbyIRr4yZcNqGPqQ92IzLBHCqhDbHAx3Mhqw/FGGAANxi/VbtZgQ8r5OSN4\\nKg3D0tc2NFwqMfV5ziGXB6DXY+vPaCqgCaKfjSTRQwtV0XfHPoiBv8V49FnJjA4D\\ncp2VGzFGuQKBgGnYWrO06FvsRM+GvcUqt+je3u3Vr+9qsaOrPWOHKX6PBHiaLEi9\\nXQV+XFOC14EjuxWvjqU3Ixwwgzk/4Z6dHye4NRF9wHP92bY3bPPD/rngCzuTMzw1\\nvycqou7TtHHZ0wEm9JdjdoA5cbJMxs8MTgMUbPRdR7KeonzP64gcSJKpAoGACTxm\\n5f04NT4IpdDevEI94NDTY7CXAzxe6zcnpsFeA4QvsW+IfHcbRLtm10liwh2+Xqyf\\nhoVoYFp7BNmn9ubVvRD2AYP9TkZwF0esswdwy7MnIFZRmJMubQ1UCCT1wbp4L270\\ndP2kRg0vAlSvQxRXNtnrR1Ct6imPz7fuhcFKJ5ECgYEAyTr3uW6cPh6VGcS/46SQ\\nZ8lv3nLryozNLIlXeUc346jP1WDNNei3gPF+Jl4TooRT7/RgHr2kcONULnIWQh7e\\nI6OztOM1p516WNl1q/v3xstJnn8+Iwe1QrGjGUdDawI/ZTR9b0VGGAzgLOov8p5D\\nkBFV/y1GVdnv7RknSzi8X6g=",
+  "enableCors": false
+}

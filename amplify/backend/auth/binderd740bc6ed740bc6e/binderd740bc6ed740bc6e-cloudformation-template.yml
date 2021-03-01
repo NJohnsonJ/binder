@@ -21,6 +21,36 @@ Parameters:
   
   
   
+  functionbinderd740bc6ed740bc6eDefineAuthChallengeArn:
+    Type: String
+    Default: functionbinderd740bc6ed740bc6eDefineAuthChallengeArn
+  
+  functionbinderd740bc6ed740bc6eDefineAuthChallengeName:
+    Type: String
+    Default: functionbinderd740bc6ed740bc6eDefineAuthChallengeName
+  
+  
+  
+  functionbinderd740bc6ed740bc6eCreateAuthChallengeArn:
+    Type: String
+    Default: functionbinderd740bc6ed740bc6eCreateAuthChallengeArn
+  
+  functionbinderd740bc6ed740bc6eCreateAuthChallengeName:
+    Type: String
+    Default: functionbinderd740bc6ed740bc6eCreateAuthChallengeName
+  
+  
+  
+  functionbinderd740bc6ed740bc6eVerifyAuthChallengeResponseArn:
+    Type: String
+    Default: functionbinderd740bc6ed740bc6eVerifyAuthChallengeResponseArn
+  
+  functionbinderd740bc6ed740bc6eVerifyAuthChallengeResponseName:
+    Type: String
+    Default: functionbinderd740bc6ed740bc6eVerifyAuthChallengeResponseName
+  
+  
+  
 
     
   resourceNameTruncated:
@@ -141,7 +171,6 @@ Parameters:
   userPoolGroupList:
     Type: CommaDelimitedList
       
-            
   serviceName:
     Type: String
   
@@ -164,6 +193,11 @@ Parameters:
       
         
   dependsOn:
+    Type: CommaDelimitedList
+      
+            
+        
+  authProviders:
     Type: CommaDelimitedList
       
 Conditions:
@@ -249,15 +283,21 @@ Resources:
       
       LambdaConfig:
         
+          CreateAuthChallenge: !Ref functionbinderd740bc6ed740bc6eCreateAuthChallengeArn
+        
         
           CustomMessage: !Ref functionbinderd740bc6ed740bc6eCustomMessageArn
         
         
+          DefineAuthChallenge: !Ref functionbinderd740bc6ed740bc6eDefineAuthChallengeArn
         
         
         
         
         
+        
+        
+          VerifyAuthChallengeResponse: !Ref functionbinderd740bc6ed740bc6eVerifyAuthChallengeResponseArn
         
       
       
@@ -285,6 +325,15 @@ Resources:
     
   
   
+  UserPoolCreateAuthChallengeLambdaInvokePermission:
+    Type: "AWS::Lambda::Permission"
+    DependsOn: UserPool
+    Properties:
+      Action: "lambda:invokeFunction"
+      Principal: "cognito-idp.amazonaws.com"
+      FunctionName: !Ref functionbinderd740bc6ed740bc6eCreateAuthChallengeName
+      SourceArn: !GetAtt UserPool.Arn
+  
   
   UserPoolCustomMessageLambdaInvokePermission:
     Type: "AWS::Lambda::Permission"
@@ -296,11 +345,29 @@ Resources:
       SourceArn: !GetAtt UserPool.Arn
   
   
+  UserPoolDefineAuthChallengeLambdaInvokePermission:
+    Type: "AWS::Lambda::Permission"
+    DependsOn: UserPool
+    Properties:
+      Action: "lambda:invokeFunction"
+      Principal: "cognito-idp.amazonaws.com"
+      FunctionName: !Ref functionbinderd740bc6ed740bc6eDefineAuthChallengeName
+      SourceArn: !GetAtt UserPool.Arn
   
   
   
   
   
+  
+  
+  UserPoolVerifyAuthChallengeResponseLambdaInvokePermission:
+    Type: "AWS::Lambda::Permission"
+    DependsOn: UserPool
+    Properties:
+      Action: "lambda:invokeFunction"
+      Principal: "cognito-idp.amazonaws.com"
+      FunctionName: !Ref functionbinderd740bc6ed740bc6eVerifyAuthChallengeResponseName
+      SourceArn: !GetAtt UserPool.Arn
   
   # Updating lambda role with permissions to Cognito
   
@@ -312,6 +379,9 @@ Resources:
     Properties:
       ClientName: binderd740bc6e_app_clientWeb
       
+      ReadAttributes: !Ref userpoolClientReadAttributes
+      WriteAttributes: !Ref userpoolClientWriteAttributes
+      
       RefreshTokenValidity: !Ref userpoolClientRefreshTokenValidity
       UserPoolId: !Ref UserPool
     DependsOn: UserPool
@@ -321,6 +391,9 @@ Resources:
     Type: "AWS::Cognito::UserPoolClient"
     Properties:
       ClientName: binderd740bc6e_app_client
+      
+      ReadAttributes: !Ref userpoolClientReadAttributes
+      WriteAttributes: !Ref userpoolClientWriteAttributes
       
       GenerateSecret: !Ref userpoolClientGenerateSecret
       RefreshTokenValidity: !Ref userpoolClientRefreshTokenValidity
