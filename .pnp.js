@@ -57,6 +57,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:17.0.2"],
             ["@types/react-dom", "npm:17.0.1"],
             ["@types/react-router-dom", "npm:5.1.7"],
+            ["@types/styled-components", "npm:5.1.7"],
             ["@typescript-eslint/eslint-plugin", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:4.15.2"],
             ["@typescript-eslint/parser", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:4.15.2"],
             ["@yarnpkg/pnpify", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:2.4.0"],
@@ -70,8 +71,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-jsx-a11y", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:6.4.1"],
             ["eslint-plugin-react", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:7.22.0"],
             ["eslint-plugin-react-hooks", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:4.2.0"],
+            ["fontsource-roboto", "npm:4.0.0"],
             ["react", "npm:17.0.1"],
             ["react-dom", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:17.0.1"],
+            ["react-is", "npm:17.0.1"],
             ["react-router-dom", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:5.2.0"],
             ["react-scripts", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:4.0.3"],
             ["typescript", "patch:typescript@npm%3A4.1.5#builtin<compat/typescript>::version=4.1.5&hash=cc6730"],
@@ -6859,6 +6862,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@types/hoist-non-react-statics", [
+        ["npm:3.3.1", {
+          "packageLocation": "./.yarn/cache/@types-hoist-non-react-statics-npm-3.3.1-c0081332b2-16ab4c45d4.zip/node_modules/@types/hoist-non-react-statics/",
+          "packageDependencies": [
+            ["@types/hoist-non-react-statics", "npm:3.3.1"],
+            ["@types/react", "npm:17.0.2"],
+            ["hoist-non-react-statics", "npm:3.3.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@types/html-minifier-terser", [
         ["npm:5.1.1", {
           "packageLocation": "./.yarn/cache/@types-html-minifier-terser-npm-5.1.1-682990a5a3-1e750b93e1.zip/node_modules/@types/html-minifier-terser/",
@@ -7112,6 +7126,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-stack-utils-npm-2.0.0-8ded8461bc-662312302e.zip/node_modules/@types/stack-utils/",
           "packageDependencies": [
             ["@types/stack-utils", "npm:2.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/styled-components", [
+        ["npm:5.1.7", {
+          "packageLocation": "./.yarn/cache/@types-styled-components-npm-5.1.7-bb28d09b7f-e0ce3949cb.zip/node_modules/@types/styled-components/",
+          "packageDependencies": [
+            ["@types/styled-components", "npm:5.1.7"],
+            ["@types/hoist-non-react-statics", "npm:3.3.1"],
+            ["@types/react", "npm:17.0.2"],
+            ["csstype", "npm:3.0.7"]
           ],
           "linkType": "HARD",
         }]
@@ -9085,6 +9111,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:17.0.2"],
             ["@types/react-dom", "npm:17.0.1"],
             ["@types/react-router-dom", "npm:5.1.7"],
+            ["@types/styled-components", "npm:5.1.7"],
             ["@typescript-eslint/eslint-plugin", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:4.15.2"],
             ["@typescript-eslint/parser", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:4.15.2"],
             ["@yarnpkg/pnpify", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:2.4.0"],
@@ -9098,8 +9125,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-jsx-a11y", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:6.4.1"],
             ["eslint-plugin-react", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:7.22.0"],
             ["eslint-plugin-react-hooks", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:4.2.0"],
+            ["fontsource-roboto", "npm:4.0.0"],
             ["react", "npm:17.0.1"],
             ["react-dom", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:17.0.1"],
+            ["react-is", "npm:17.0.1"],
             ["react-router-dom", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:5.2.0"],
             ["react-scripts", "virtual:4a49167f0956760b95bc9f28860e7c6a2219cebadfccb64596a4828c5811def3eceec351d338b1a117e7dd6d35c4a701b144dfc753bddb6ff1e27056870c16ff#npm:4.0.3"],
             ["typescript", "patch:typescript@npm%3A4.1.5#builtin<compat/typescript>::version=4.1.5&hash=cc6730"],
@@ -13056,6 +13085,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "packagePeers": [
             "debug"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["fontsource-roboto", [
+        ["npm:4.0.0", {
+          "packageLocation": "./.yarn/cache/fontsource-roboto-npm-4.0.0-e59f846a75-ca6dcb423a.zip/node_modules/fontsource-roboto/",
+          "packageDependencies": [
+            ["fontsource-roboto", "npm:4.0.0"]
           ],
           "linkType": "HARD",
         }]
