@@ -1,10 +1,20 @@
 import React, { useState } from 'react';
+import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import { IconButton, Menu, MenuItem } from '@material-ui/core';
 import { Menu as MenuIcon } from '@material-ui/icons';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import routes from '../routes';
 
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    menuButton: {
+      marginRight: theme.spacing(2),
+    },
+  })
+);
 const NavMenu = () => {
+
+  const classes = useStyles();
 
   const [anchorEl, setAnchorEl] = useState<HTMLElement | null>(null);
 
@@ -19,10 +29,11 @@ const NavMenu = () => {
   return (
     <>
       <IconButton
+        className={classes.menuButton}
         edge="start"
         aria-label="menu"
         color="inherit"
-        onClick={ handleClick }
+        onClick={handleClick}
         aria-controls='nav-menu'
         aria-haspopup='true'
       >
@@ -30,14 +41,18 @@ const NavMenu = () => {
       </IconButton>
       <Menu
         id="nav-menu"
-        anchorEl={ anchorEl }
+        anchorEl={anchorEl}
         keepMounted
-        open={ Boolean(anchorEl) }
-        onClose={ handleClose }
+        open={Boolean(anchorEl)}
+        onClose={handleClose}
       >
-        { routes.map(route => (
-          <MenuItem onClick={ handleClose }><Link to={ route.path }>{ route.title }</Link></MenuItem>
-        )) }
+        {routes.map(route => (
+          <MenuItem onClick={handleClose}>
+            <NavLink to={route.path}>
+              {route.title}
+            </NavLink>
+          </MenuItem>
+        ))}
       </Menu>
     </>
   )
