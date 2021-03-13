@@ -26,13 +26,13 @@ const Header = () => {
 
   return (
     <div className={classes.root}>
-      <AppBar position="sticky">
+      <AppBar position="static">
         <Toolbar>
           <NavMenu />
-          <Typography variant="h6" >
+          <Typography variant="h6" classes={classes.title}>
             Binder
         </Typography>
-          <Button onClick={() => setShowLogin(true)}>Login</Button>
+          <Button color="inherit" onClick={() => setShowLogin(true)}>Login</Button>
           {showLogin ? (
             <Login onClose={() => setShowLogin(false)} />
           ) : null}

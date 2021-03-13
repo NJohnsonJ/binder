@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes slidein-top {
+  from {
+    margin-bottom: 100%;
+  }
+  
+  to {
+    margin-bottom: 0;
+  }
+}
+
+@keyframes slideout-top {
+  from {
+    margin-bottom: 0;
+  }
+  
+  to {
+    margin-top: 100%;
+  }
+}
